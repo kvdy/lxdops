@@ -19,6 +19,7 @@
 # Script Name: lxdops_deps.sh
 # Description: This script will install all required packages 
 # Author: Chintamani Bhagwat
+# Email : chintamanib@valueaddsofttech.com
 ################################################################################
 
 # Function for error checking

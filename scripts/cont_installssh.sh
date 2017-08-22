@@ -19,6 +19,7 @@
 # Script Name: cont_installssh.sh
 # Description: This script install ssh server on container and enables ssh
 # Author: Chintamani Bhagwat
+# Email : chintamanib@valueaddsofttech.com
 ################################################################################
 
 # Supported osfamily list - 
@@ -46,16 +47,16 @@ set -e
 # Print help for usage 
 usage()
 {
-        echo "Usage:"
-        echo -e "  ./cont_installssh.sh --container <container> --osfamily <OSfamily>"
-        echo -e "  Supported OS families - centos,ubuntu,debian,alpine"
+        echo -e "\n\tUsage:"
+        echo -e "\t./cont_installssh.sh --container <container> --osfamily <OSfamily>"
+        echo -e "\n\tSupported OS families - centos,ubuntu,debian,alpine"
         echo ""
 }
 
 # Checking number of parameters
 if [ $# -lt 4 ]
 then
-    if [ "$1" == "--help" ]
+    if [[ "$1" == "--help" || -z "$1" ]]
     then
         usage 
         exit

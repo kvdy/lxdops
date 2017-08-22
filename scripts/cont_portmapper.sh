@@ -22,6 +22,7 @@
 #               - Removing lxc container port to host port mapping
 #               - Listing all current lxc container to host port mappings
 # Author: Chintamani Bhagwat
+# Email : chintamanib@valueaddsofttech.com
 ################################################################################
 
 # Function for error checking
@@ -41,14 +42,14 @@ set -e
 # Functions 
 usage()
 {
-    echo -e "Usage : "
-    echo -e "--list"
-    echo -e "\t To list all port mappings "
-    echo -e "--add"
-    echo -e "\t To add port mapping. This needs additional parameters as listed below, "
+    echo -e "\n\tUsage : "
+    echo -e "\t--list"
+    echo -e "\t\tTo list all port mappings "
+    echo -e "\n\t--add"
+    echo -e "\t\tTo add port mapping. This needs additional parameters as listed below, "
     echo -e "\t\t--container <Container name>\n\t\t--contport <Container Port>\n\t\t--hostport <Host Port>"
-    echo -e "--remove"
-    echo -e "\t To remove port mapping. This needs additional parameters as listed below, "
+    echo -e "\n\t--remove"
+    echo -e "\t\tTo remove port mapping. This needs additional parameters as listed below, "
     echo -e "\t\t--container <Container name>\n\t\t--contport <Container Port>\n\t\t--hostport <Host Port>"
     #echo "ERROR:Incorrect Syntax"
     exit

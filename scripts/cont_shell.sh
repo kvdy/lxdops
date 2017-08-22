@@ -20,6 +20,7 @@
 # Description: This script enables container access over web browser using 
 #               shellinabox package 
 # Author: Chintamani Bhagwat
+# Email : chintamanib@valueaddsofttech.com
 ################################################################################
 
 # Function for error checking
@@ -27,6 +28,7 @@ error_check()
 {
     if [ $? -ne 0 ]
     then
+	echo 
         echo "ERROR: The script $0 failed at $BASH_COMMAND"
     else
         echo "The script $0 is executed successfully"
@@ -34,20 +36,20 @@ error_check()
 }
 trap error_check EXIT
 set -e
-set -x
+#set -x
 usage()
 {
-    echo "Usage:"
-    echo "To enable shell access over web browser"
-    echo -e "\t./lxd_cont_shell.sh --enable --container <container> --hostport <host port>"
-    echo "To disable shell access over web browser"
-    echo -e "\t./lxd_cont_shell.sh --disable --container <container>\n"
+    echo -e "\n\tUsage:"
+    echo -e "\tTo enable shell access over web browser"
+    echo -e "\t\t./lxd_cont_shell.sh --enable --container <container> --hostport <host port>"
+    echo -e "\n\tTo disable shell access over web browser"
+    echo -e "\t\t./lxd_cont_shell.sh --disable --container <container>\n"
 }
 
 # Checking for number of arguments
 if [ $# -lt 5 ]
 then
-    if [ "$1" == "--help" ]
+    if [[ "$1" == "--help" || -z "$1" ]]
     then
         usage 
         exit
