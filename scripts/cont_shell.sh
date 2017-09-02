@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ################################################################################
-# Script Name: lxd_cont_shell.sh
+# Script Name: cont_shell.sh
 # Description: This script enables container access over web browser using 
 #               shellinabox package 
 # Author: Chintamani Bhagwat
@@ -41,9 +41,9 @@ usage()
 {
     echo -e "\n\tUsage:"
     echo -e "\tTo enable shell access over web browser"
-    echo -e "\t\t./lxd_cont_shell.sh --enable --container <container> --hostport <host port>"
+    echo -e "\t\t./cont_shell.sh --enable --container <container> --hostport <host port>"
     echo -e "\n\tTo disable shell access over web browser"
-    echo -e "\t\t./lxd_cont_shell.sh --disable --container <container>\n"
+    echo -e "\t\t./cont_shell.sh --disable --container <container>\n"
 }
 
 # Checking for number of arguments
