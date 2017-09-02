@@ -43,7 +43,7 @@ usage()
     echo -e "\tTo enable shell access over web browser"
     echo -e "\t\t./cont_shell.sh --enable --container <container> --hostport <host port>"
     echo -e "\n\tTo disable shell access over web browser"
-    echo -e "\t\t./cont_shell.sh --disable --container <container>\n"
+    echo -e "\t\t./cont_shell.sh --disable --container <container> --hostport <host port>\n"
 }
 
 # Checking for number of arguments
