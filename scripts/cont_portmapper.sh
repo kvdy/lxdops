@@ -47,7 +47,7 @@ usage()
     echo -e "\t\tTo list all port mappings "
     echo -e "\n\t--add"
     echo -e "\t\tTo add port mapping. This needs additional parameters as listed below, "
-    echo -e "\t\t--container <Container name>\n\t\t--contport <Container Port>\n\t\t--hostport <Host Port>"
+    echo -e "\t\t--container <Container name>\n\t\t--contport <Container Port>\n\t\t--hostport <Host Port>\n\t\t--portdesc \"<Add port description>\""
     echo -e "\n\t--remove"
     echo -e "\t\tTo remove port mapping. This needs additional parameters as listed below, "
     echo -e "\t\t--container <Container name>\n\t\t--contport <Container Port>\n\t\t--hostport <Host Port>"
